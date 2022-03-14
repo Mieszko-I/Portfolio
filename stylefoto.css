@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #020718;
+}
+
+.navigation {
+    width: 100%;
+    position: static;
+    top: 0;
+    justify-content: center;
+    text-align: center;
+    height: 140px;
+    display: flex;
+    background: #020718;
+    transition: all .3s;
+
+}
+
+nav {
+    width: 600px;
+    height: 90px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: 10px;
+    left: auto;
+    padding-bottom: 20px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 40 0px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2em;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+}
+
+.navigation ul li a .icon:hover {
+    transform: translateY(-20px);
+}
+
+.navigation ul li .cat {
+    transform: translateY(-30px);
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project p {
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+}
+
+.project p:last-child {
+    margin-bottom: 15px;
+}
+
+.country {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    top: 10px;
+    flex-direction: column;
+}
+
+.country h1 {
+    color: whitesmoke;
+    margin: 15px 0;
+    font-weight: 800;
+}
+.country h1 .up {
+    float: left;
+    padding-top: 3px;
+}
+.country h1 .up a {
+    text-decoration: none;
+    color: white;
+}
+
+.country h1 p {
+    font-size: 12px;
+    float: left;
+    padding: 9px 0 0 3px;
+}
+.poland, .greece, .ukraine, .spain, .croatia, .italy {
+    width: 90vw;
+    position: static;
+}
+
+.photopoland, .photogreece, .photoukraine, .photospain, .photocroatia, .photoitaly {
+    display: inline-block;
+    justify-content: center;
+}
+
+.polandimg, .greeceimg, .italyimg {
+    height: 250px;
+    width: 400px;
+    transition: transform 0.3s;
+}
+
+.ukraineimg, .spainimg, .croatiaimg  {
+    height: 250px;
+    width: 330px;
+    transition: transform 0.3s;
+}
+
+.polandimg:hover, .greeceimg:hover, .ukraineimg:hover, 
+.spainimg:hover, .croatiaimg:hover, .italyimg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pol, .oat, .ita{
+color: #FFFFFF;
+}
+.and {
+    color: #D22630;
+}
+.gre {
+    color: rgb(255,255,255);
+}
+.ece {
+    color: rgb(0,20,137);
+}
+.ukr{
+    color: #0057B8;
+}
+.aine {
+    color: #FFD700;
+}
+.sp {
+    color: #EF3340;
+}
+.ain {
+    color: #FFD100;
+}
+.cr {
+    color: #C8102E;
+}
+.ia {
+    color: #012169;
+}
+.it {
+    color: #007A33;
+}
+.ly {
+    color: #CB333B;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
